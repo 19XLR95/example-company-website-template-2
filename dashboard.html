@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="example Software Customer Monitor Panel">
+    <meta name="keywords" content="example, example Software, example, example software, customer monitor panel">
+    <meta name="copyright"content="example Software">
+    <meta name="language" content="tr">
+    <meta name="language" content="en">
+    <meta name="robots" content="index,follow">
+    <meta name="author" content="example Software, info@examplesoft.com">
+    <meta name="url" content="https://customer.examplesoft.com">
+
+    <meta name="og:title" content="Dashboard | Customer Monitor Panel | example Software">
+    <meta name="og:url" content="https://customer.examplesoft.com">
+    <meta name="og:image" content="http://customer.examplesoft.com/res/images/logo.png">
+    <meta name="og:site_name" content="example Software">
+    <meta name="og:description" content="example Software Customer Monitor Panel">
+    <meta name="og:email" content="info@examplesoft.com">
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <link rel="canonical" href="https://customer.examplesoft.com">
+
+    <link rel="icon" href="res/images/icon.png">
+
+    <title>Dashboard | Customer Monitor Panel | example Software</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300i,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/cca.css">
+  </head>
+
+  <body>
+    <div style="height: 100%; padding-top: 5%;" class="ui container">
+      <div class="ui stackable grid">
+        <div class="ui sixteen wide column">
+          <a href="https://examplesoft.com" target="_blank">
+            <img src="res/images/logo.png" alt="example Software Logo" width="150px">
+          </a>
+
+          <button id="logoutBtn" class="ui primary right floated icon button">
+            Logout &nbsp;<i class="fas fa-sign-out-alt"></i>
+          </button>
+
+          <a href="projects.html" id="changeBtn" class="ui right floated icon button">
+            Projects &nbsp;<i class="fas fa-clipboard-list"></i></i>
+          </a>
+        </div>
+
+        <div class="ui ten wide column">
+          <div class="ui segment">
+            <h1 id="dashboardTitle">Customer Dashboard</h1>
+            <hr>
+
+            <table class="ui very basic table">
+              <tbody>
+                <tr>
+                  <td class="three wide tableTitle"><i class="fas fa-tasks"></i>&nbsp; Project</td>
+                  <td class="tableDescription">Company website design and development. (PCXG052020111)</td>
+                </tr>
+
+                <tr>
+                  <td class="three wide tableTitle"><i class="fas fa-building"></i>&nbsp; Company</td>
+                  <td class="tableDescription">XYZ Co. Inc.</td>
+                </tr>
+
+                <tr>
+                  <td class="three wide tableTitle"><i class="fas fa-user"></i>&nbsp; Name</td>
+                  <td class="tableDescription">John Doe (CCXG05202079)</td>
+                </tr>
+
+                <tr>
+                  <td class="three wide tableTitle"><i class="fas fa-globe"></i>&nbsp; Website</td>
+                  <td class="tableDescription">www.xyzcoinc.com</td>
+                </tr>
+
+                <tr>
+                  <td class="three wide tableTitle"><i class="fas fa-envelope"></i>&nbsp; Email</td>
+                  <td class="tableDescription">info@xyzcoinc.com</td>
+                </tr>
+
+                <tr>
+                  <td class="three wide tableTitle"><i class="fas fa-phone"></i>&nbsp; Phone</td>
+                  <td class="tableDescription">+01 650 549 5422</td>
+                </tr>
+
+                <tr>
+                  <td class="three wide tableTitle"><i class="fas fa-map-marker-alt"></i>&nbsp; Address</td>
+                  <td class="tableDescription">3251  Thunder Road OAKDALE WI</td>
+                </tr>
+
+                <tr>
+                  <td class="three wide tableTitle"><i class="fas fa-file-invoice-dollar"></i>&nbsp; Payment</td>
+                  <td class="tableDescription">Upfront payment was made. Remaining payment pending.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="ui six wide column">
+          <h3 id="barDescription">Overall Project Completion Status</h3>
+
+          <div id="circularBar"></div>
+
+          <a id="previewBtn" href="#" target="_blank" class="ui primary button">Preview Project</a>
+        </div>
+      </div>
+
+      <div style="margin-top: 50px;" class="ui one column grid">
+        <div class="ui column">
+          <div class="ui raised segments">
+            <div class="ui segment">
+              <h1 id="dashboardTitle">Project Status Updates</h1>
+            </div>
+
+            <div class="ui segment statusSegment">
+              <h4 class="tableTitle">
+                <i class="fas fa-check"></i>&nbsp; Project started
+                <span class="statusDate">17 Feb 2019</span>
+              </h4>
+
+              <p style="padding-left: 21px;" class="tableDescription">The upfront payment received and the project started.</p>
+            </div>
+
+            <div class="ui segment statusSegment">
+              <h4 class="tableTitle">
+                <i class="fas fa-check"></i>&nbsp; Home page
+                <span class="statusDate">18 Feb 2019</span>
+              </h4>
+
+              <p style="padding-left: 21px;" class="tableDescription">Home page frontend construction finished and it is ready to preview.</p>
+            </div>
+
+            <div class="ui segment statusSegment">
+              <h4 class="tableTitle">
+                <i class="fas fa-check"></i>&nbsp; Contact page
+                <span class="statusDate">18 Feb 2019</span>
+              </h4>
+
+              <p style="padding-left: 21px;" class="tableDescription">Contact page frontend construction finished and it is ready to preview.</p>
+            </div>
+
+            <div class="ui segment statusSegment">
+              <h4 class="tableTitle">
+                <i class="fas fa-check"></i>&nbsp; Contact page
+                <span class="statusDate">19 Feb 2019</span>
+              </h4>
+
+              <p style="padding-left: 21px;" class="tableDescription">Contact page backend construction finished.</p>
+            </div>
+
+            <div class="ui segment statusSegment">
+              <h4 class="tableTitle">
+                <i class="fas fa-check"></i>&nbsp; Services page
+                <span class="statusDate">19 Feb 2019</span>
+              </h4>
+
+              <p style="padding-left: 21px;" class="tableDescription">Services page frontend construction finished and it is ready to preview.</p>
+            </div>
+
+            <div class="ui segment statusSegment">
+              <h4 class="tableTitle">
+                <i class="fas fa-check"></i>&nbsp; Blog page
+                <span class="statusDate">20 Feb 2019</span>
+              </h4>
+
+              <p style="padding-left: 21px;" class="tableDescription">Blog page frontend construction finished and it is ready to preview.</p>
+            </div>
+
+            <div class="ui segment statusSegment">
+              <h4 class="tableTitle">
+                <i class="fas fa-check"></i>&nbsp; Blog page
+                <span class="statusDate">21 Feb 2019</span>
+              </h4>
+
+              <p style="padding-left: 21px;" class="tableDescription">Blog page backend construction finished.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div style="position: relative; top: 50%; transform: translateY(-50%);" class="ui stackable two column grid">
+          <div class="ui left aligned column">
+            <span class="footerText">Copyrights &copy; All rights reserved. | <a style="color: white; border-bottom: 1px solid white;" href="https://examplesoft.com" target="_blank">example Software</a></span>
+          </div>
+
+          <div id="footerRightCol" class="ui right aligned column">
+            <span class="footerText">Do you have any problem? <a style="color: white; border-bottom: 1px solid white;" href="https://examplesoft.com/contact" target="_blank">Contact Us</a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  <script src="js/progressbar.js"></script>
+  <script src="js/cca.js"></script>
+  <script>
+    var bar = new ProgressBar.Circle(circularBar, {
+      color: '#3C97DE',
+      strokeWidth: 8,
+      trailColor: 'white',
+      trailWidth: 0.5,
+      easing: 'easeInOut',
+      duration: 1000,
+      step: function(state, circle) {
+        var value = Math.round(circle.value() * 100);
+        if (value === 0) {
+          circle.setText('0%');
+        } else {
+          circle.setText(value + '%');
+        }
+
+      }
+    });
+
+    bar.text.style.fontFamily = '"Poppins", sans-serif';
+    bar.text.style.fontSize = '50px';
+
+    bar.animate(0.40);
+  </script>
+</html>
